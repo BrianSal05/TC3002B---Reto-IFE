@@ -1,3 +1,8 @@
+# Normalizamos los datos antes de entrenar los modelos
+# Output CSV file: normalized.csv
+# Solo Normaliza las variables de interes
+
+
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 
@@ -33,4 +38,4 @@ df_selected[numerical_columns] = scaler.fit_transform(df_selected[numerical_colu
 print(df_selected.head())
 
 print("Total rows after cleaning: ", len(df_selected))
-df_selected.to_csv('normalized_all.csv', index=False)
+df_selected.to_csv('normalized.csv', index=False)

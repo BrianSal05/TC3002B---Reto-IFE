@@ -1,3 +1,6 @@
+# Limpiar la base de datos de los datos faltantes
+# Output CSV file: clean.csv
+
 import pandas as pd
 
 # Load the dataset

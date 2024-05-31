@@ -1,3 +1,9 @@
+# Matriz Relacional
+# Vizualización de la matriz de correlación
+# entre las variables seleccionadas
+# Output Plot de Matriz
+# Output Archivo de texto con el resumen de la matriz
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
