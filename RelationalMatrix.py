@@ -11,10 +11,13 @@ import seaborn as sns
 
 df = pd.read_csv('DataSets/normalized.csv')
 
+
+df = df[df['retention'] == 0]
+
 # Filter the relevant variables
 variables_of_interest = [
     'age', 'gender', 'program', 'average.first.period', 'scholarship.perc', 
-    'loan.perc', 'retention', 'dropout.semester', 'socioeconomic.level', 'foreign',
+    'loan.perc', 'dropout.semester', 'socioeconomic.level', 'foreign',
     'social.lag'
 ]
 df_filtered = df[variables_of_interest]
@@ -40,7 +43,7 @@ def analyze_correlations(correlation_matrix, threshold):
 
 # Describe the correlations
 def describe_correlations(correlated_vars):
-    print(f"Correlated Variables:{correlated_vars}")
+    f.write(f"Correlated Variables:{correlated_vars}")
     for var1, var2, corr in correlated_vars:
         direction = "positive" if corr > 0 else "negative"
         f.write(f"Variables {var1} and {var2} are {direction}ly correlated with a correlation coefficient of {corr:.2f}."+"\n")

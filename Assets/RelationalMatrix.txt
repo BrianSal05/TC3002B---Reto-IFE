@@ -1,31 +1,36 @@
 *************************************
 Correlation Matrix Summary
-Variables program and age are negatively correlated with a correlation coefficient of -0.62.
-Variables loan.perc and age are positively correlated with a correlation coefficient of 0.27.
-Variables loan.perc and program are negatively correlated with a correlation coefficient of -0.27.
-Variables scholarship.perc and average.first.period are positively correlated with a correlation coefficient of 0.20.
-Variables retention and average.first.period are positively correlated with a correlation coefficient of 0.28.
-Variables dropout.semester and retention are negatively correlated with a correlation coefficient of -0.92.
-Variables social.lag and socioeconomic.level are negatively correlated with a correlation coefficient of -0.33.
+Correlated Variables:[('program', 'age', -0.5092562373870047), ('loan.perc', 'age', 0.209556188052739), ('age', 'program', -0.5092562373870047), ('loan.perc', 'program', -0.2055994602764914), ('dropout.semester', 'average.first.period', 0.3856956563802424), ('loan.perc', 'scholarship.perc', 0.2790460722532517), ('age', 'loan.perc', 0.209556188052739), ('program', 'loan.perc', -0.2055994602764914), ('scholarship.perc', 'loan.perc', 0.2790460722532517), ('average.first.period', 'dropout.semester', 0.3856956563802424), ('social.lag', 'socioeconomic.level', -0.3583358974992199), ('socioeconomic.level', 'social.lag', -0.3583358974992199)]Variables program and age are negatively correlated with a correlation coefficient of -0.51.
+Variables loan.perc and age are positively correlated with a correlation coefficient of 0.21.
+Variables age and program are negatively correlated with a correlation coefficient of -0.51.
+Variables loan.perc and program are negatively correlated with a correlation coefficient of -0.21.
+Variables dropout.semester and average.first.period are positively correlated with a correlation coefficient of 0.39.
+Variables loan.perc and scholarship.perc are positively correlated with a correlation coefficient of 0.28.
+Variables age and loan.perc are positively correlated with a correlation coefficient of 0.21.
+Variables program and loan.perc are negatively correlated with a correlation coefficient of -0.21.
+Variables scholarship.perc and loan.perc are positively correlated with a correlation coefficient of 0.28.
+Variables average.first.period and dropout.semester are positively correlated with a correlation coefficient of 0.39.
+Variables social.lag and socioeconomic.level are negatively correlated with a correlation coefficient of -0.36.
+Variables socioeconomic.level and social.lag are negatively correlated with a correlation coefficient of -0.36.
 
 Summary for variables of interest:
-Variable: age- Correlated with program (Correlation: -0.62)- Correlated with loan.perc (Correlation: 0.27)- Correlated with program (Correlation: -0.62)- Correlated with loan.perc (Correlation: 0.27)
-Variable: program- Correlated with age (Correlation: -0.62)- Correlated with age (Correlation: -0.62)- Correlated with loan.perc (Correlation: -0.27)- Correlated with loan.perc (Correlation: -0.27)
-Variable: average.first.period- Correlated with scholarship.perc (Correlation: 0.20)- Correlated with retention (Correlation: 0.28)- Correlated with scholarship.perc (Correlation: 0.20)- Correlated with retention (Correlation: 0.28)
-Variable: scholarship.perc- Correlated with average.first.period (Correlation: 0.20)- Correlated with average.first.period (Correlation: 0.20)
-Variable: loan.perc- Correlated with age (Correlation: 0.27)- Correlated with program (Correlation: -0.27)- Correlated with age (Correlation: 0.27)- Correlated with program (Correlation: -0.27)
-Variable: retention- Correlated with average.first.period (Correlation: 0.28)- Correlated with average.first.period (Correlation: 0.28)- Correlated with dropout.semester (Correlation: -0.92)- Correlated with dropout.semester (Correlation: -0.92)
-Variable: dropout.semester- Correlated with retention (Correlation: -0.92)- Correlated with retention (Correlation: -0.92)
-Variable: socioeconomic.level- Correlated with social.lag (Correlation: -0.33)- Correlated with social.lag (Correlation: -0.33)
-Variable: social.lag- Correlated with socioeconomic.level (Correlation: -0.33)- Correlated with socioeconomic.level (Correlation: -0.33)
-
+Variable: age- Correlated with program (Correlation: -0.51)- Correlated with loan.perc (Correlation: 0.21)- Correlated with program (Correlation: -0.51)- Correlated with loan.perc (Correlation: 0.21)
+Variable: gender
+Variable: program- Correlated with age (Correlation: -0.51)- Correlated with age (Correlation: -0.51)- Correlated with loan.perc (Correlation: -0.21)- Correlated with loan.perc (Correlation: -0.21)
+Variable: average.first.period- Correlated with dropout.semester (Correlation: 0.39)- Correlated with dropout.semester (Correlation: 0.39)
+Variable: scholarship.perc- Correlated with loan.perc (Correlation: 0.28)- Correlated with loan.perc (Correlation: 0.28)
+Variable: loan.perc- Correlated with age (Correlation: 0.21)- Correlated with program (Correlation: -0.21)- Correlated with scholarship.perc (Correlation: 0.28)- Correlated with age (Correlation: 0.21)- Correlated with program (Correlation: -0.21)- Correlated with scholarship.perc (Correlation: 0.28)
+Variable: dropout.semester- Correlated with average.first.period (Correlation: 0.39)- Correlated with average.first.period (Correlation: 0.39)
+Variable: socioeconomic.level- Correlated with social.lag (Correlation: -0.36)- Correlated with social.lag (Correlation: -0.36)
+Variable: foreign
+Variable: social.lag- Correlated with socioeconomic.level (Correlation: -0.36)- Correlated with socioeconomic.level (Correlation: -0.36)
 *************************************
-                age        gender       program  average.first.period  scholarship.perc     loan.perc     retention  dropout.semester  socioeconomic.level       foreign    social.lag
-count  19273.000000  19273.000000  19273.000000          19273.000000      19273.000000  19273.000000  19273.000000      19273.000000         19273.000000  19273.000000  19273.000000
-mean       0.199780      0.520365     11.272090              0.874297          0.193857      0.107114      0.927360          0.050226             5.252374      0.309241      1.037358
-std        0.091696      0.499598      5.487585              0.115696          0.236254      0.268769      0.259552          0.194676             1.105255      0.715167      0.201064
-min        0.000000      0.000000      0.000000              0.000000          0.000000      0.000000      0.000000          0.000000             0.000000      0.000000      0.000000
-25%        0.105263      0.000000      7.000000              0.840000          0.000000      0.000000      1.000000          0.000000             5.000000      0.000000      1.000000
-50%        0.210526      1.000000     14.000000              0.896667          0.000000      0.000000      1.000000          0.000000             6.000000      0.000000      1.000000
-75%        0.263158      1.000000     15.000000              0.940000          0.400000      0.000000      1.000000          0.000000             6.000000      0.000000      1.000000
-max        1.000000      1.000000     18.000000              1.000000          1.000000      1.000000      1.000000          1.000000             6.000000      2.000000      2.000000
+               age       gender      program  average.first.period  scholarship.perc    loan.perc  dropout.semester  socioeconomic.level      foreign   social.lag
+count  1400.000000  1400.000000  1400.000000           1400.000000       1400.000000  1400.000000       1400.000000          1400.000000  1400.000000  1400.000000
+mean      0.223158     0.537143    10.455714              0.759132          0.111964     0.095000          0.691429             5.177857     0.351429     1.040714
+std       0.100089     0.498797     5.630209              0.261274          0.195969     0.256638          0.280020             1.169885     0.749122     0.211667
+min       0.052632     0.000000     0.000000              0.000000          0.000000     0.000000          0.250000             0.000000     0.000000     0.000000
+25%       0.105263     0.000000     5.000000              0.739583          0.000000     0.000000          0.500000             5.000000     0.000000     1.000000
+50%       0.263158     1.000000    14.000000              0.850000          0.000000     0.000000          0.500000             6.000000     0.000000     1.000000
+75%       0.263158     1.000000    15.000000              0.907952          0.200000     0.000000          1.000000             6.000000     0.000000     1.000000
+max       0.894737     1.000000    18.000000              1.000000          0.900000     1.000000          1.000000             6.000000     2.000000     2.000000

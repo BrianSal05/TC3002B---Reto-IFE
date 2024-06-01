@@ -10,7 +10,7 @@ df = pd.read_csv('DataSets/normalized.csv')
 
 # Selección de las características y la variable objetivo
 X = df[['program', 'average.first.period', 'scholarship.perc', 
-                       'loan.perc', 'dropout.semester', 'socioeconomic.level', 'foreign', 'social.lag']]
+                       'loan.perc', 'socioeconomic.level', 'foreign', 'social.lag']]
 y = df['retention']
 
 
@@ -35,5 +35,6 @@ print("R-squared:", r2)
 for var in range (len(X.columns)):
     print(X.columns[var], ":", lin_reg.coef_[var])
 print("Intercepto del modelo:", lin_reg.intercept_)
+
 
 

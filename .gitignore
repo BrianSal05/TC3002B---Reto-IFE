@@ -1,16 +1,2 @@
-    __pycache__
-    - .gitignore
-    - README.md
-    - requirements.txt
-    - setup.py
-    - test.py
-    - test_requirements.txt
-    - tox.ini
-    - .travis.yml
-    - .gitignore
-    - .coveragerc
-    - .gitattributes
-    - ComparesSVCnGradient.py
-    - GradientBoosting.py
-    - SVC.py
-    
+__pycache__/
+CompareSVCnGradient.py
